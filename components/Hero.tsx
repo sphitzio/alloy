@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover opacity-60 grayscale-[50%]"
         >
-          <source src="https://files.catbox.moe/t2wfx0.mp4" type="video/mp4" />
+          <source src="https://github.com/sphitzio/alloy/raw/refs/heads/main/bghero.mp4" type="video/mp4" />
         </video>
         {/* Overlay Gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-[#050505]"></div>
