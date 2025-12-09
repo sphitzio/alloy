@@ -47,7 +47,7 @@ export const About: React.FC = () => {
           playsInline
           className="w-full h-full object-cover opacity-60 grayscale-[50%]"
         >
-          <source src="https://files.catbox.moe/dlzldo.mp4" type="video/mp4" />
+          <source src="https://github.com/sphitzio/alloy/raw/refs/heads/main/claudiovieira.mp4" type="video/mp4" />
         </video>
             </div>
           </div>
