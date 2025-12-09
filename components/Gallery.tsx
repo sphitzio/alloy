@@ -35,18 +35,17 @@ const images = [
     caption: 'Interior',
     span: 'col-span-1 md:col-span-2 row-span-2'
   },
-
-  {
+    {
     url: 'https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/9.png',
     caption: 'Lisbon',
     span: 'col-span-1 row-span-1'
   },
-  {
+    {
     url: 'https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/10.png',
     caption: 'Editorial',
     span: 'col-span-1 md:col-span-2 row-span-1'
   },
-  {
+    {
     url: 'https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/11_2.png',
     caption: 'Detail',
     span: 'col-span-1 row-span-1'
@@ -56,7 +55,7 @@ const images = [
     caption: 'Lisbon',
     span: 'col-span-4 row-span-2'
   },
-      {
+    {
     url: 'https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/6.png',
     caption: 'Lisbon',
     span: 'col-span-4 row-span-2'
