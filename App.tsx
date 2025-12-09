@@ -28,7 +28,7 @@ const App: React.FC = () => {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (password.toLowerCase() === 'alloy') {
+    if (password.toLowerCase() === 'alloystudio') {
         setIsAuthenticated(true);
     } else {
         setError(true);
