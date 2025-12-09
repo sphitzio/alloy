@@ -48,8 +48,8 @@ const App: React.FC = () => {
     return (
         <div className="min-h-screen bg-[#050505] flex flex-col items-center justify-center p-4">
             <div className="w-full max-w-xs flex flex-col items-center animate-in fade-in duration-1000">
-                <div className="w-32 mb-12 opacity-90">
-                   <img src="https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/alloy1.svg" alt="ALLOY." className="w-full h-auto" />
+                <div className="w-64 mb-12 opacity-100">
+                   <img src="https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/alloy2.svg" alt="ALLOY." className="w-full h-auto" />
                 </div>
                 <form onSubmit={handleLogin} className="w-full">
                     <input 
@@ -129,7 +129,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
              <div className="h-5 mb-4">
-                <img src="https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/alloy2.svg" alt="ALLOY." className="h-full w-auto opacity-80" />
+                <img src="https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/alloy2.svg" alt="ALLOY." className="h-full w-auto opacity-100" />
              </div>
              <p className="text-xs text-zinc-500 tracking-widest uppercase">Hair Studio • Lisbon</p>
           </div>
