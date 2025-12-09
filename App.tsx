@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
   if (!isAuthenticated) {
     return (
-        <div className="min-h-screen bg-[#050505] flex flex-col items-center justify-center p-4">
+        <div className="max-h-screen bg-[#050505] flex flex-col items-center justify-center p-4">
             <div className="w-full max-w-xs flex flex-col items-center animate-in fade-in duration-1000">
                 <div className="w-64 mb-12 opacity-100">
                    <img src="https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/alloy2.svg" alt="ALLOY." className="w-full h-auto" />
