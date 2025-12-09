@@ -50,7 +50,7 @@ const images = [
     url: 'https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/11_2.png',
     caption: 'Detail',
     span: 'col-span-1 row-span-1'
-  }
+  },
     {
     url: 'https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/4.jpg',
     caption: 'Lisbon',
