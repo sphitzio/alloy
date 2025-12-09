@@ -11,6 +11,10 @@ import { Contact } from './components/Contact';
 import { MapPinIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const App: React.FC = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(false);
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -22,6 +26,16 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (password.toLowerCase() === 'alloy') {
+        setIsAuthenticated(true);
+    } else {
+        setError(true);
+        setTimeout(() => setError(false), 500);
+    }
+  };
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -30,8 +44,30 @@ const App: React.FC = () => {
     setMobileMenuOpen(false);
   };
 
+  if (!isAuthenticated) {
+    return (
+        <div className="min-h-screen bg-[#050505] flex flex-col items-center justify-center p-4">
+            <div className="w-full max-w-xs flex flex-col items-center animate-in fade-in duration-1000">
+                <div className="w-32 mb-12 opacity-90">
+                   <img src="https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/alloy1.svg" alt="ALLOY." className="w-full h-auto" />
+                </div>
+                <form onSubmit={handleLogin} className="w-full">
+                    <input 
+                      type="password" 
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      className={`w-full bg-transparent border-b text-center text-xs tracking-[0.3em] py-3 outline-none transition-all duration-300 font-medium ${error ? 'border-red-900 text-red-500 animate-shake' : 'border-zinc-800 focus:border-zinc-500 text-zinc-300 placeholder-zinc-800'}`}
+                      placeholder="ACCESS CODE"
+                      autoFocus
+                    />
+                </form>
+            </div>
+        </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-[#050505] text-zinc-300">
+    <div className="min-h-screen bg-[#050505] text-zinc-300 animate-in fade-in duration-1000">
       {/* Navigation */}
       <nav 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -68,7 +104,7 @@ const App: React.FC = () => {
         <div className="flex flex-col h-full p-8">
             <div className="flex justify-between items-center mb-12">
                  <div className="h-6">
-                    <img src="/alloy1.svg" alt="ALLOY." className="h-full w-auto" />
+                    <img src="https://raw.githubusercontent.com/sphitzio/various/refs/heads/main/alloy1.svg" alt="ALLOY." className="h-full w-auto" />
                  </div>
                  <button onClick={() => setMobileMenuOpen(false)}><XMarkIcon className="w-8 h-8 text-white" /></button>
             </div>
